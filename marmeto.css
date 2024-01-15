@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /*background-color: #f0f0f0;*/
+    padding: 10px;
+    text-align: center;
+}
+.heading{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 5px;
+
+}
+
+#searchInput {
+    padding: 4px;
+    width: 35%;
+    border-radius: 4px;
+    
+}
+
+button {
+    margin-left: 10px;
+}
+
+#productContainer {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%; 
+    margin: 0 auto;
+}
+
+.listItem,.gridItem {
+    border: 1px solid #ccc;
+    padding: 10px;    
+    margin: 10px;
+
+}
+
+@media screen and (max-width: 1024) {
+    .listView {
+        flex-direction: column;
+    }
+}
+
+.listView{
+    border: 1px solid gray;
+    background: white;
+    margin: auto;
+    margin-top: 10px;
+    width: 99%;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.product_badge{
+    background: #CCFF78;
+    font-family: Sans-serif;
+    font-size: 12px;
+    padding: 2px;
+    border-radius:10px;
+    position: absolute;
+    width: 60px;
+    text-align: center;
+
+}
+.variantList{
+    /*background: #CCFF78;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.product_image{
+    height: 80px;
+    width: 80px;
+    
+}
+.image_container{
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 90px;
+    height: 120px;
+    margin-top: 15px;
+
+}
+    
+.productBadge_container{
+    /*background-color: #ccc;*/
+    /*position: absolute;*/
+    display: flex;
+    flex-direction: row;
+      
+    
+}
+.variantList{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    
+}
+
+.product_Title{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    
+}
+li {
+    margin:5px;
+}
+
+.gridView {
+    display: flex;
+    border: 1px solid gray;
+    background: white;
+    margin: auto;
+    margin-top: 10px;
+    width: 99%;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #ccc
+}
+
+.gridView .listItem.gridItem {
+    width: 40%;
+    background: #ccc;
+}
+.gridView .productBadge_container {
+    display: block;
+}
+
+.gridView .productBadge_container .image_container {
+    width: 100%;
+    text-align: center;
+    background: none;
+}
+
+
+.gridView .productBadge_container .image_container img.product_image {
+    width: auto;
+    height: 100%;
+}
+.gridView .productBadge_container {
+    position: relative;
+}
+
+.gridView .productBadge_container span.product_badge {
+    right: 0;
+}
+ul li {
+    list-style: none;
+    background: #fff;    
+    padding: 2px 10px;
+}
